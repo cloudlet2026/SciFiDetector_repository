@@ -1,17 +1,17 @@
 # FPGA Vivado 工程导入
 
 ## 概述
-
+使用ALINX `AX7Z020B`开发板与ALINX `AN9238` 模块
+连接：AN9238----J21----AX7Z020B
+      ADG708----J20----AX7Z020B
 本脚本用于自动导入 Vivado FPGA 工程 `SciFiDetector`，目标器件为 `xc7z020clg400-2`。
-可修改 `project_name` 更改工程名称为其他名称。
-可修改 `part` 的器件型号为自己的器件型号。
 
 ## 目录结构
 
 克隆仓库后的目录结构：
 ```
-/path/to/your_worksapce/             # 你的工程目录
-├── project_repository/                   # 克隆的仓库目录（本文件夹）
+/path/to/your_worksapce/             # Vivado工程目录
+├── project_repository/           # 克隆的仓库目录（本文件夹）
 │   ├── create_project.tcl       # 工程导入脚本
 │   ├── sources_1/               # 源文件目录
 │   │   ├── ip/                 # IP 核文件 (.xci)
@@ -20,7 +20,7 @@
 │   ├── constrs_1/               # 约束文件 (.xdc)
 │   ├── sim_1/                   # 仿真文件
 │   └── sdk/                     # SDK 工程目录
-└── SciFiDetector/                # 生成的 Vivado 工程（脚本自动创建）
+└── SciFiDetector/                # 生成的 Vivado 工程
 ```
 
 ## 使用方法
