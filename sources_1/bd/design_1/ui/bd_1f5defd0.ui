@@ -1,0 +1,68 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 990 -defaultsOSRD
+preplace port adc_clk -pg 1 -y 1130 -defaultsOSRD
+preplace port mux_sel_en -pg 1 -y 1330 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 1010 -defaultsOSRD
+preplace portBus adc_data -pg 1 -y 910 -defaultsOSRD
+preplace portBus cmp_in -pg 1 -y 1350 -defaultsOSRD
+preplace portBus mux_sel -pg 1 -y 1310 -defaultsOSRD
+preplace inst dmca_0 -pg 1 -lvl 3 -y 460 -defaultsOSRD
+preplace inst adc_sample_0 -pg 1 -lvl 5 -y 1110 -defaultsOSRD
+preplace inst axi_lite_ctrl_0 -pg 1 -lvl 4 -y 450 -defaultsOSRD
+preplace inst rst_ps7_0_250M -pg 1 -lvl 4 -y 1250 -defaultsOSRD
+preplace inst daq_axi_lite_0 -pg 1 -lvl 4 -y 160 -defaultsOSRD
+preplace inst mux_controller_0 -pg 1 -lvl 5 -y 1320 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 1 -y 990 -defaultsOSRD
+preplace inst rst_ps7_0_66M -pg 1 -lvl 2 -y 1250 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 5 -y 890 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 5 -y 570 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -y 720 -defaultsOSRD
+preplace inst system_ila_1 -pg 1 -lvl 6 -y 1220 -defaultsOSRD
+preplace inst wave_bram_ctrl_0 -pg 1 -lvl 4 -y 730 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 4 -y 900 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -y 1050 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 2 5 NJ 990 NJ 990 NJ 990 NJ 990 N
+preplace netloc ps7_0_axi_periph_M02_AXI 1 3 1 1050
+preplace netloc processing_system7_0_FCLK_CLK3 1 2 4 N 1090 1020 1150 1520 1200 1980
+preplace netloc wave_bram_ctrl_0_intr_clr_ack 1 3 2 1140 620 1510
+preplace netloc axi_lite_ctrl_0_daq_en 1 2 3 670 340 1080 340 1610
+preplace netloc wave_bram_ctrl_0_intr 1 0 5 30 320 NJ 320 NJ 320 NJ 320 1640
+preplace netloc axi_lite_ctrl_0_wave_intr_clr 1 3 2 1150 610 1520
+preplace netloc axi_lite_ctrl_0_adc_en 1 4 1 1550
+preplace netloc cmp_in_0_1 1 0 6 NJ 1350 NJ 1350 NJ 1350 NJ 1350 1530J 1230 1980
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 660
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 4 1 N
+preplace netloc daq_axi_lite_0_intr 1 0 5 40 920 NJ 920 NJ 920 1050J 1000 1570
+preplace netloc dmca_0_peak_value_ok 1 3 2 1090 570 1540J
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 3 230 1360 630 1230 NJ
+preplace netloc dmca_0_SHAPE_PARAMS 1 3 1 N
+preplace netloc axi_lite_ctrl_0_wave_en 1 3 2 1160 980 1530
+preplace netloc adc_sample_0_adc_clk 1 5 2 NJ 1130 N
+preplace netloc ps7_0_axi_periph_M01_AXI 1 3 1 1020
+preplace netloc triangle_data 1 3 2 1030 600 NJ
+preplace netloc dmca_0_peak_value 1 3 2 1100 560 1510J
+preplace netloc mux_controller_0_mux_sel_en 1 3 4 1120 1030 1590J 1020 2000 1330 N
+preplace netloc rst_ps7_0_66M_peripheral_aresetn 1 2 3 640 360 1060 1100 NJ
+preplace netloc wave_bram_ctrl_0_BRAM_PORTA 1 4 1 1560
+preplace netloc xlconcat_0_dout 1 1 1 220
+preplace netloc processing_system7_0_FIXED_IO 1 2 5 NJ 1010 NJ 1010 NJ 1010 NJ 1010 N
+preplace netloc daq_axi_lite_0_intr_clr_ack 1 3 2 1130 590 1630
+preplace netloc adc_sample_0_adc_fifo_data 1 2 4 670 880 1040 1020 1580 980 1980
+preplace netloc rst_ps7_0_250M_peripheral_aresetn 1 4 1 1510
+preplace netloc trapezd_data 1 3 2 1040 580 NJ
+preplace netloc mux_controller_0_mux_sel 1 3 4 1110 1140 1530J 1210 1990 1310 N
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 4 230 930 650 560 1070 1040 1600
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 1050
+preplace netloc axi_lite_ctrl_0_daq_intr_clr 1 3 2 1140 330 1620
+preplace netloc adc_data_0_1 1 0 5 NJ 910 NJ 910 NJ 910 1030J 1050 1540J
+levelinfo -pg 1 -10 130 430 840 1340 1810 2093 2210 -top 0 -bot 1440
+"
+}
+{
+   "da_axi4_cnt":"5",
+   "da_bram_cntlr_cnt":"1",
+   "da_clkrst_cnt":"7"
+}

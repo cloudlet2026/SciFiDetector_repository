@@ -1,0 +1,12 @@
+name: scifidetector
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - pyserial>=3.5
+    - numpy>=1.24.0
+    - matplotlib>=3.7.0
+    - PySide2>=5.15.0
