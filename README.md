@@ -12,14 +12,15 @@
 ```
 /path/to/your_worksapce/             # Vivado工程目录
 ├── project_repository/           # 克隆的仓库目录（本文件夹）
+│   ├── create_project.bat       # 工程导入批处理文件
 │   ├── create_project.tcl       # 工程导入脚本
-│   ├── sources_1/               # 源文件目录
-│   │   ├── ip/                 # IP 核文件 (.xci)
-│   │   ├── src/                # RTL 源码 (.v, .vh, .vhd, .vhdl)
-│   │   └── bd/                 # Block Design 文件 (.bd, .tcl)
-│   ├── constrs_1/               # 约束文件 (.xdc)
-│   ├── sim_1/                   # 仿真文件
-│   └── sdk/                     # SDK 工程目录
+│   ├── ip/                      # IP 核文件 (.xci)
+│   ├── src/                     # RTL 源码 (.v, .vh, .vhd, .vhdl)
+│   ├── bd/                      # Block Design 文件 (.bd, .tcl)
+│   ├── xdc/                     # 约束文件 (.xdc)
+│   ├── sim/                     # 仿真文件
+│   ├── sdk/                     # SDK 工程目录
+│   └── UpperComputer/           # 上位机工程目录
 └── SciFiDetector/                # 生成的 Vivado 工程
 ```
 
@@ -33,22 +34,8 @@ git clone <repository_url>
 ```
 
 ### 步骤二：导入工程
+双击 `create_project.bat` 脚本，即可自动导入工程。
 
-#### 方法一：Vivado Tcl Console
-
-1. 打开 Vivado
-2. 在 Tcl Console 中执行：
-   ```tcl
-   cd /path/to/your_worksapce/project_repository
-   source ./create_project.tcl
-   ```
-
-#### 方法二：命令行模式
-
-```bash
-cd /path/to/your_worksapce/project_repository
-vivado -mode batch -source create_project.tcl
-```
 
 ## 脚本功能
 
@@ -88,7 +75,7 @@ vivado -mode batch -source create_project.tcl
 在弹出的对话框中：
 1. 选择 **General → Existing Projects into Workspace**
 2. 点击 **Next**
-3. 选择 **Select root directory**，选择或填入 SDK 工程路径
+3. 选择 **Select root directory**，选择或填入当前工程目录下的 SDK 工程路径
 4. 勾选需要导入的工程
 5. 点击 **Finish**
 
